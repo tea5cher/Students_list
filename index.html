@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <script src="main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inp_wrapper">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">ФИО</span>
+        <input type="text" class="form-control fil_fio" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Факультет</span>
+        <input type="text" class="form-control fil_fac" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Дата рождения</span>
+        <input type="date" class="form-control fil_date" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Год начала обучения</span>
+        <input type="text" class="form-control fil_edu" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="fil fio">ФИО студента</th>
+                <th scope="col" class="fil fac">Факультет</th>
+                <th scope="col" class="fil age">Дата рождения и возраст</th>
+                <th scope="col" class="fil start">Годы обучения и курс</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+          </table>
+      
+      <div class="form_wrapper">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Имя</label>
+              <input type="input" class="form-control name" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Фамилия</label>
+                <input type="input" class="form-control surname" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Отчество</label>
+                <input type="input" class="form-control second_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Дата рождения</label>
+              <input type="date" class="form-control birthday" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Год начала обучения</label>
+                <input type="number" class="form-control edu_start" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Факультет</label>
+                <input type="text" class="form-control faculty" id="exampleInputPassword1">
+            </div>
+<!-- 
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="button" class="btn btn-primary">Добавить студента</button>
+            <div class="invalid-feedback invalid_form">
+              Вы не заполнили форму.
+            </div>
+            <div class="invalid-feedback invalid_bth">
+              Дата рождения введена некорректно.
+            </div>
+            <div class="invalid-feedback invalid_start">
+              Год начала обучения введен некорректно.
+            </div>
+          </form>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
